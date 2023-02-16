@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Language</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <nav>
+                <div class="logo">
+                    <img class="logo_img" src="{% static 'img/logodenew.png' %}" alt="logo">
+                </div>
+                <ul>
+                    <a href="/"><li class="a_grammar">Главная</li></a>
+                    <a href="{% url 'gramatic' %}"><li>Грамматика</li></a>
+                    <a href="{% url 'toppic' %}"><li>Топики</li></a>
+                    <a href="{% url 'video_lesson' %}"><li>Видеоуроки</li></a>
+                    <a href="{% url 'test' %}"><li>Тест</li></a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <h1>Грамматика</h1>
+                <img src="{% static 'img/Deutsch_11.jpg' %}" alt="">
+                <h2 class="content">
+                    На Deutsch Online немецкая грамматика объясняется живым и доступным для понимания языком!
+                </h2>
+<p class="content">
+    Данный справочник предназначен как для начинающих (поскольку не предполагает у читателя никаких предварительных познаний в немецком языке и вводит материал последовательно и постепенно), так и для совершенствующих свой немецкий (поскольку содержит подробный материал вплоть до тонкостей, в которых путаются и сами немцы).
+</p>
+<p>
+    В немецком языке не бывает просто дерева. Может быть либо ein Baum [айн баум] - одно (какое-либо) дерево, либо der Baum [дэа баум] - то (самое) дерево.
+
+Другими словами, перед всеми существительными стоит служебное слово, которое выражает его определенность или неопределенность – определенный или неопределенный артикль. В приведенном выше примере: ein – неопределенный артикль, а der – определенный артикль (мужского рода).
+
+Так как же всё-таки определить артикль, запомнить его и употребить правильно?
+</p>
+<img src="{% static 'img/grammar.jpg' %}" alt="">
+<p>
+    Давайте рассмотрим примеры:
+Gibt es hier in der Nähe eine Bar? – Есть ли здесь поблизости (один) бар?
+
+Вы употребили неопределенный артикль, так как не знаете, что за бар и есть ли он вообще. Вам ответят:
+Ja, ich kenne hier eine Bar. – Да, я знаю здесь (один) бар.
+
+Это уже, конечно, вполне конкретный бар. Почему же употреблен неопределенный артикль? Дело в том, что неопределенный артикль может означать не только один какой-то (как в вашем вопросе), но и один из (как в ответе). То есть может выражать не только неопределенность, но и принадлежность частной вещи к общему понятию: Это один из баров. Кстати, о пяти лучших барах Мюнхена можно прочитать в нашей статье!
+</p>
+<img src="{% static 'img/opr_i_neopr_artikli_01.jpg' %}" alt="">
+
+</div>
+        </main>
+        <footer>
+            <h2>мы в соцсетях</h2>
+            <div class="icons">
+                <a href="https://ok.ru/deutschonlineru">
+                    <img class="icon_img" src="{% static 'img/ok.png' %}" alt="">
+                </a>
+                <a href="https://t.me/+uDWD5NYN2yxhYTVi">
+                    <img class="icon_img" src="{% static 'img/tg.png' %}" alt="">
+                </a>
+                <a href="https://vk.com/deutschonline">
+                    <img class="icon_img" src="{% static 'img/vk.png' %}" alt="">
+                </a>
+                <a href="https://www.youtube.com/channel/UCq9oL-cMbFyNDEblNZhHyFQ">
+                    <img class="icon_img" src="{% static 'img/yt.png' %}" alt="">
+                </a>
+            </div>
+        </footer>
+    </div>
+
+

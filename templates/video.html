@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Language</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <nav>
+                <div class="logo">
+                    <img class="logo_img" src="{% static 'img/logodenew.png' %}" alt="logo">
+                </div>
+                <ul>
+                    <a href="/"><li class="a_grammar">Главная</li></a>
+                    <a href="{% url 'gramatic' %}"><li>Грамматика</li></a>
+                    <a href="{% url 'toppic' %}"><li>Топики</li></a>
+                    <a href="{% url 'video_lesson' %}"><li>Видеоуроки</li></a>
+                    <a href="{% url 'test' %}"><li>Тест</li></a>
+                </ul>
+            </nav>
+        </header>
+        <main class="main">
+            <h1>Видеоуроки</h1>
+            <div class="cards">
+                <div class="card card1">
+                    <img class="card_video" src="{% static 'img/video1.jpg' %}" alt=""card>
+                    <a href="https://www.de-online.ru/video/vip/167/zhizn_v_germanii/chto_nelzya_delat_v_germanii_chast_2" class="title2">Что НЕЛЬЗЯ делать в Германии? Часть 2 | Разбираем все запретные темы</a>
+                </div>
+                <div class="card card1">
+                    <img class="card_video" src="{% static 'img/video2.jpg' %}" alt=""card>
+                    <a href="https://www.de-online.ru/video/vip/146/zhizn_v_germanii/14_fevralya" class="title2">День Святого Валентина в Германии</a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <h2>мы в соцсетях</h2>
+            <div class="icons">
+                <a href="https://ok.ru/deutschonlineru">
+                    <img class="icon_img" src="{% static 'img/ok.png' %}" alt="">
+                </a>
+                <a href="https://t.me/+uDWD5NYN2yxhYTVi">
+                    <img class="icon_img" src="{% static 'img/tg.png' %}" alt="">
+                </a>
+                <a href="https://vk.com/deutschonline">
+                    <img class="icon_img" src="{% static 'img/vk.png' %}" alt="">
+                </a>
+                <a href="https://www.youtube.com/channel/UCq9oL-cMbFyNDEblNZhHyFQ">
+                    <img class="icon_img" src="{% static 'img/yt.png' %}" alt="">
+                </a>
+            </div>
+        </footer>
+    </div>
+
+

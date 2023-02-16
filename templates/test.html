@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Language</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <nav>
+                <div class="logo">
+                    <img class="logo_img" src="{% static 'img/logodenew.png' %}" alt="logo">
+                </div>
+                <ul>
+                    <a href="/"><li class="a_grammar">Главная</li></a>
+                    <a href="{% url 'gramatic' %}"><li>Грамматика</li></a>
+                    <a href="{% url 'toppic' %}"><li>Топики</li></a>
+                    <a href="{% url 'video_lesson' %}"><li>Видеоуроки</li></a>
+                    <a href="{% url 'test' %}"><li>Тест</li></a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+
+            <div class="quiz-box" id="quiz">
+                <div class="quiz-header">
+                    <h2 id="question">Тест на Немецком языке</h2>
+                    <ul>
+                        <li>
+                            <input type="radio" name="answer" id="a" class="answer">
+                            <label for="a" id="a_text">Question</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" id="b" class="answer">
+                            <label for="b" id="b_text">Question</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="answer" id="c" class="answer">
+                            <label for="c" id="c_text">Question</label>
+                        </li>
+                    </ul>
+                </div>
+                <button id="submit">Submit</button>
+            </div>
+
+
+        </main>
+        <footer>
+            <h2>мы в соцсетях</h2>
+            <div class="icons">
+                <a href="https://ok.ru/deutschonlineru">
+                    <img class="icon_img" src="{% static 'img/ok.png' %}" alt="">
+                </a>
+                <a href="https://t.me/+uDWD5NYN2yxhYTVi">
+                    <img class="icon_img" src="{% static 'img/tg.png' %}" alt="">
+                </a>
+                <a href="https://vk.com/deutschonline">
+                    <img class="icon_img" src="{% static 'img/vk.png' %}" alt="">
+                </a>
+                <a href="https://www.youtube.com/channel/UCq9oL-cMbFyNDEblNZhHyFQ">
+                    <img class="icon_img" src="{% static 'img/yt.png' %}" alt="">
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    
+    <script src="{% static 'js/main.js' %}"></script>
+    </body>

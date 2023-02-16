@@ -1,0 +1,224 @@
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    margin: 0 auto;
+    text-align: center;
+
+}
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 50px;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 35px;
+    text-align: center;
+    
+}
+nav h3{
+    font-size: 16px;
+    margin-top: 3px;
+}
+.logo_img{
+    margin-left: 65px;
+    color: white;
+    width: 192px;
+}
+
+main{
+    display: flex;
+    gap: 30px;
+    /* justify-content: center; */
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+nav ul li{
+    padding-top: 10px;
+    width: 150px;
+    height: 30px;
+    list-style: none;
+    background-color: rgb(219, 219, 219);
+}
+nav ul li:hover{
+    border: none;
+    background-color: rgb(103, 7, 7);
+    color: white;
+}
+a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.grid{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.first_grid{
+   max-width: 200px;
+   border: 1px solid #000;
+   padding-right: 50px;
+   
+}
+.second_grid{
+    width: 100%;
+    padding: 20px 50px;
+    /* margin-right: 25px; */
+}
+.repetitors {
+    background: url(https://www.de-online.ru/icons_new/repetitors.png) no-repeat center 25px;
+    width:40px;
+}
+.a_grammar{
+    background-color: rgb(103, 7, 7);
+    color: white;
+}
+
+.carousel{
+margin: 0 auto;
+}
+
+div ul li{
+    list-style: none;
+}
+.conteiner{
+    margin: 0 auto;
+}
+.slider{
+    width: 1190px;
+    height: 250px;
+    /* border: 2px solid #000; */
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.slider-line{
+    transition: all 2000ms ease-out;
+    position: relative;
+    left: 0px;
+    width: 2380px;
+    display: flex;
+}
+
+button{
+    width: 20px;
+    height: 30px;
+    margin: 150px 20px;
+    background-color: none;
+    border: none;
+    color: none;
+}
+
+
+.next {
+    background: green;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    color: #fff;
+   }
+   .next::after {
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    left: 20px; bottom: -20px; /* Положение треугольника */
+    border: 10px solid transparent; /* Прозрачные границы */
+    border-top: 10px solid green; /* Добавляем треугольник */}
+
+    .cards{
+        margin: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 41px;
+    }
+    .card {
+        width: 266px;
+        height: 500px;
+        margin-bottom: 40px;
+    }
+    .card_img{
+        width: 266px;
+        height: 266px;
+    }
+    .card_video{
+        width: 450px;
+        height: auto;
+    }
+    .card1{
+        margin-left: 80px;
+        margin-right: 200px;
+    }
+    .main{
+        display: flex;
+        justify-content: center;
+        display: block;
+    }
+    i{
+        background-color: black;
+        margin-top: -55px;
+    }
+    .title {
+        font-size: 22px;
+    line-height: 26px;
+    margin: 0 0 10px 0;
+    padding: 0;
+    text-decoration: none !important;
+    color: black !important;
+    margin-top: 4px;
+    }
+    .title2 {
+        font-size: 24px;
+    line-height: 26px;
+    margin: 5px 0 10px 0;
+    padding: 0;
+    text-decoration: none !important;
+    color: black !important;
+    margin-top: 4px;
+    }
+    .text {
+        color: #9f9f9f;    font-size: 16px;
+        color: #333333;
+        line-height: 1.4em;
+    }
+
+    .icons{
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+        margin-bottom: 80px;
+    }
+
+    .icon_img{
+        width: 80px;
+        height: 80px;
+    }
+
+    footer h2{
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 50px;
+    }
+
+    .content, p{
+        text-align:left;
+        padding: 20px 50px;
+        font-size: 22px;
+    }
+    .quiz-box{
+        margin: 0 auto;
+    }
+    #submit{
+        width: auto;
+    }

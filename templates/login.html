@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Log In Form CSS  2017</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+  
+</head>
+<body>
+  <div class="overlay">
+<!-- LOGN IN FORM by Omar Dsoky -->
+<form method="POST">
+   {% csrf_token %}
+   <div class="con">
+   <!--     Start  header Content  -->
+   <header class="head-form">
+      <h2>Авторизоваться</h2>
+      <!--     A welcome message or an explanation of the login form -->
+      <p>войдите здесь, используя свой логин и пароль</p>
+   </header>
+   <!--     End  header Content  -->
+   <br>
+    <div style="text-align: center;" class="field-set">
+        <input type="text" width="" class="form-input" name="username" aria-describedby="emailHelp" placeholder="Username..."> <br>
+        <input type="password" class="form-input" placeholder="Password..." name="password">
+        <button class="button" type="submit" class="log-in"> Войти </button>
+    </div>
+  
+<!--   other buttons -->
+   <div class="other">
+<!--      Forgot Password button-->
+
+   </div>
+     
+<!--   End Conrainer  -->
+  </div>
+  
+  <!-- End Form -->
+</form>
+</div>
+  
+    <script src="{% static 'js/index.js' %}"></script>
+
+</body>
+</html>

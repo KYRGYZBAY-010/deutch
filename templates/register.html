@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Log In Form CSS  2017</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+  
+</head>
+<body>
+   {% if user.is_authenticated %}
+   <h1 style="text-align: center; margin-top: 20%; color: brown;">Вы уже зарегистрированы!</h1>
+   {% else %}
+  <div class="overlay">
+<!-- LOGN IN FORM by Omar Dsoky -->
+<form method="POST">
+   {% csrf_token %}
+   <div class="con">
+   <!--     Start  header Content  -->
+   <header class="head-form">
+      <h2>Авторизоваться</h2>
+      <!--     A welcome message or an explanation of the login form -->
+      <p>войдите здесь, используя свой логин и пароль</p>
+   </header>
+   <!--     End  header Content  -->
+   <br>
+   <div style="text-align: center;" class="field-set">
+     {{ form.username }}
+     {{ form.email }}
+     {{ form.password1 }}
+     {{ form.password2 }}
+      <button class="button" type="submit" class="log-in"> Зарегистрироваться </button>
+   </div>
+  
+<!--   other buttons -->
+   <div class="other">
+<!--      Forgot Password button-->
+<!--     Sign Up button -->
+      <p>вы уже зарегистрированы?</p>
+      <a href="{% url 'login' %}" class="button btn submits sign-up">Войти
+<!--         Sign Up font icon -->
+      <i class="fa fa-user-plus" aria-hidden="true"></i>
+      </a>
+<!--      End Other the Division -->
+   </div>
+     
+<!--   End Conrainer  -->
+  </div>
+  
+  <!-- End Form -->
+</form>
+{% endif %}
+</div>
+  
+    <script src="{% static 'js/index.js' %}"></script>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Language</title>
+</head>
+<body>
+<style>
+    .login{
+        padding-left: 3%;
+    }
+    .login:hover{
+        color: brown;
+    }
+</style>
+
+
+    <div class="container">
+
+        <header>
+            <nav>
+                <div class="logo">
+                    <img class="logo_img" src="{% static 'img/logodenew.png' %}" alt="logo">
+                </div>
+                <ul>
+                    <a href="/"><li class="a_grammar">Главная</li></a>
+                    <a href="{% url 'gramatic' %}"><li>Грамматика</li></a>
+                    <a href="{% url 'toppic' %}"><li>Топики</li></a>
+                    <a href="{% url 'video_lesson' %}"><li>Видеоуроки</li></a>
+                    <a href="{% url 'test' %}"><li>Тест</li></a>
+                    <a class="login" href="{% url 'register' %}"><ion-icon style="width: 30px; height: 30px; padding-top: 2.8%;" name="person-outline"></ion-icon></a>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="conteiner"> 
+                <div class="slider">
+                    <div class="slider-line">
+                        <img class="img low" src="{% static 'img/carousel.png' %}" alt="">
+                        <img class="img" src="{% static 'img/carousel_2.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="card">
+                        <img class="card_img" src="{% static 'img/card_img.jpg' %}" alt=""card>
+                        <a href="https://www.de-online.ru/5-pravil-nemetskogo-a1" class="title">5 Базовых правил немецкого языка для начинающих</a>
+                        <p class="text">Учимся склонять местоимения, спрягать правильные глаголы и строить предложения на немецком</p>
+                    </div>
+                    <div class="card">
+                        <img class="card_img" src="{% static 'img/card2.jpg' %}" alt=""card>
+                        <a href="https://www.de-online.ru/nemetskiye-pevitsy" class="title">Немецкие певицы</a>
+                        <p class="text">Сегодня поговорим о немецких исполнительницах, чьи песни любят во всем мире. А еще с их помощью, разумеется, можно учить немецкий</p>
+                    </div>
+                    <div class="card">
+                        <img class="card_img" src="{% static 'img/card3.jpg' %}" alt=""card>
+                        <a href="https://www.de-online.ru/youtube-kanaly-dlya-izucheniya-nemetskogo" class="title">Учим немецкий по видео: лучшие YouTube-каналы для начинающих</a>
+                        <p class="text">Как разнообразить своё обучение немецкому? Конечно видеоуроками! И это совершенно бесплатно.</p>
+                    </div>
+                    <div class="card">
+                        <img class="card_img" src="{% static 'img/card4.jpg' %}" alt=""card>
+                        <a href="https://www.de-online.ru/samye-samye-universitety-germanii" class="title">Топ-7 университетов Германии</a>
+                        <p class="text">Отвечаем на вопрос, куда пойти учиться в Германии. Топ-7 для будущих абитуриентов.</p>
+                    </div>
+                    <div class="card">
+                        <img class="card_img" src="{% static 'img/card5.jpg' %}" alt=""card>
+                        <a href="https://www.de-online.ru/neobychnye-zakony-germanii" class="title">Необычные законы Германии, которые полезно знать туристам и переезжающим</a>
+                        <p class="text">Самые странные запреты, которые строго соблюдаются немцами и за несоблюдение которых можно получить штраф.</p>
+                    </div>
+                    <div class="card">
+                        <img class="card_img" src="{% static 'img/card6.jpg' %}" alt=""card>
+                        <a href="https://www.de-online.ru/zu-in-nach" class="title">Предлоги направления в немецком - zu, in, nach</a>
+                        <p class="text">Немецкие предлоги, в которых часто делают ошибки начинающие. Разбираемся в правилах употребления и тренируемся на примерах.</p>
+                    </div>
+                    <div class="card">
+                        <img class="card_img" src="{% static 'img/card7.jpg' %}" alt=""card>
+                        <a href="https://www.de-online.ru/dialekty-nemeckogo-jazyka" class="title">Диалекты немецкого языка</a>
+                        <p class="text">Учимся различать немецкие диалекты - находим исторические предпосылки и смотрим видео! А может, и Hochdeutsch достаточно?</p>
+                    </div>
+                    <div class="card">
+                        <img class="card_img" src="{% static 'img/card8.jpg' %}" alt=""card>
+                        <a href="https://www.de-online.ru/nemetskiye-narechiya" class="title">Наречия в немецком языке</a>
+                        <p class="text">Вся информация о немецких наречиях в одной статье: их виды, степени сравнения и перевод на русский язык, а также таблица самых популярных наречий</p>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- main -->
+        </main>
+        <footer>
+            <h2>мы в соцсетях</h2>
+            <div class="icons">
+                <a href="https://ok.ru/deutschonlineru">
+                    <img class="icon_img" src="{% static 'img/ok.png' %}" alt="">
+                </a>
+                <a href="https://t.me/+uDWD5NYN2yxhYTVi">
+                    <img class="icon_img" src="{% static 'img/tg.png' %}" alt="">
+                </a>
+                <a href="https://vk.com/deutschonline">
+                    <img class="icon_img" src="{% static 'img/vk.png' %}" alt="">
+                </a>
+                <a href="https://www.youtube.com/channel/UCq9oL-cMbFyNDEblNZhHyFQ">
+                    <img class="icon_img" src="{% static 'img/yt.png' %}" alt="">
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="{% static 'js/script.js' %}"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
